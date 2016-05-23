@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="248026f0-5103-40a8-a7df-1868f8722073" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://hackproject.cloudapp.net/ImageService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ImageService.xsd" MetadataType="Schema" ID="c1d7bb56-dfce-4c20-87ff-36821d341182" SourceId="1" SourceUrl="http://hackproject.cloudapp.net/ImageService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ImageService.wsdl" MetadataType="Wsdl" ID="75479ca8-61c7-488a-aba5-d2d38f7ee8fc" SourceId="1" SourceUrl="http://hackproject.cloudapp.net/ImageService.svc?wsdl" />
+    <MetadataFile FileName="ImageService.disco" MetadataType="Disco" ID="e33de591-2d03-4d17-8fdd-307a2e4a5382" SourceId="1" SourceUrl="http://hackproject.cloudapp.net/ImageService.svc?disco" />
+    <MetadataFile FileName="ImageService1.xsd" MetadataType="Schema" ID="7fd9b824-551c-4079-9c3c-8e6f32e112e5" SourceId="1" SourceUrl="http://hackproject.cloudapp.net/ImageService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ImageService2.xsd" MetadataType="Schema" ID="1b9c6def-72dd-4e03-b7dd-b685325b575c" SourceId="1" SourceUrl="http://hackproject.cloudapp.net/ImageService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Preview Page</title>
+</head>
+<body>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="signalr/hubs"></script>
+
+    <script type="text/javascript">
+        var count = 0;
+        $(
+            function () {
+
+                //alert($('#sentImage'));
+                //alert($('#sentImage').src);
+                
+                var imgHub = $.connection.imageHub;
+                //alert(imgHub);
+
+                imgHub.client.broadcastImage = function(blobUrl)
+                {
+                    //alert(blobUrl);
+                    $('#sentImage').attr('src', blobUrl);
+                    count++;
+                    document.getElementById("count").innerHTML = count;
+                }
+
+
+                $.connection.hub.start().done(function () {
+
+                    //alert("hub connected");
+                });
+
+            });
+        function refreshCount()
+        {
+            
+            count = 0;
+            //count++;
+            //alert(count);
+            //alert(document.getElementById("count").innerHTML);
+            document.getElementById("count").innerHTML = count;
+        }
+    </script>
+    
+    <div>
+        <img id="sentImage" src="" />
+    </div>
+    <div>
+        <span id="count">0</span><input type="button" value="Refresh" onclick="javascript: refreshCount();" />
+    </div>
+</body>
+</html>
